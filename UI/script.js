@@ -226,3 +226,7 @@ function drawTideGraph() {
         }
     });
 }
+function toggleHighContrast() {
+    const body = document.body;
+    body.classList.toggle('high-contrast');
+}

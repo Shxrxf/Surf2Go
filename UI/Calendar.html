@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf2u Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>Home</li>
+                <li>Events</li>
+                <li>Meet-ups</li>
+                <li class="active">Calendar</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="filter">
+                <select onchange="filterEvents(this.value)">
+                    <option value="all">Show all</option>
+                    <option value="sunny">Sunny weather</option>
+                    <option value="safelySurfable">Safely surfable</option>
+                    <option value="risky">Risky</option>
+                    <option value="lowSurfers">Low amount of surfers expected</option>
+                    <option value="highSurfers">High amount of surfers expected</option>
+                    <option value="eventOn">Event on</option>
+                </select>
+            </div>
+            <div class="key">
+                <p><span class="key-color sunny"></span> Sunny weather</p>
+                <p><span class="key-color safelySurfable"></span> Safely surfable</p>
+                <p><span class="key-color risky"></span> Risky</p>
+                <p><span class="key-color lowSurfers"></span> Low amount of surfers expected</p>
+                <p><span class="key-color highSurfers"></span> High amount of surfers expected</p>
+                <p><span class="key-color eventOn"></span> Event on</p>
+            </div>
+            
+            <table id="calendar">
+                
+            </table>`
+<div id="dateModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalDate">Date Information</h2>
+      <p id="modalRisk">Risk Details</p>
+      <p id="modalEvents">Event Details</p>
+      <p id="modalSurfers">Surfer Information</p>
+      <p id="modalWeather">Weather Details</p>
+      <div class="tide-graph">
+        <canvas id="tideChart"></canvas>
+      </div>
+    </div>
+  </div>
+  
+    
+    </div>
+  </div>
+  
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

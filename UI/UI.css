@@ -23,21 +23,5 @@ p {
     font-size: 16px;
     line-height: 1.6;
 }
-.high-contrast {
-    background-color: #000 !important;
-    color: #fff !important;
-}
 
-.high-contrast a {
-    color: #0ff !important;
-}
-
-.high-contrast .navbar, .high-contrast footer {
-    background-color: #fff !important;
-    color: #000 !important;
-}
-
-.high-contrast .calendar-day {
-    border-color: #fff !important; 
-}
 
